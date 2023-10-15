@@ -1,4 +1,4 @@
-class Shape(object):
+class Shape():
     def __init__(self):
         pass
 
@@ -6,12 +6,14 @@ class Shape(object):
         return 0
 
 class Square(Shape):
-    def __init__(self, l):
+    def __init__(self,length = 0):
         Shape.__init__(self)
-        self.length = l
+        self.length = length
 
     def area(self):
         return self.length*self.length
 
-aSquare= Square(3)
-print aSquare.area()
+Asqr = Square(5)
+print(Asqr.area())      # prints 25 as given argument
+
+print(Square().area())
