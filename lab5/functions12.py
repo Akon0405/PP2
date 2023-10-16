@@ -4,4 +4,4 @@ def f_to_c(f):
 f = 86
 c = f_to_c(f)
 
-print "{0} fahrenheit is {1} centigrade".format(f, c)
+print ("{0} fahrenheit is {1} centigrade".format(f, c))
